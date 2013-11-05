@@ -1,4 +1,4 @@
-# jquery.mannytap
+# jquery.event.mannytap
 
 A lightweight jQuery event handler for better mobile clicking.
 
