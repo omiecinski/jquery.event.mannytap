@@ -1,12 +1,11 @@
 # jquery.event.mannytap
 
-A lightweight jQuery event handler for better mobile clicking.
+A lightweight jQuery event handler for better click event handling.
 
 ### Features
 
-* Moves click events to touchend for faster event response time.
+* Moves touch/click events to touchend/mouseup for faster event response time.
 * Allows for a user-configurable amount of x and y change during clicks to compensate for slight touch movements.
-* Falls back to click events on devices that don't support ontouch events.
 * Utilizes jQuery's special event API for easy initialization
 
 ### Options (and defaults)
@@ -28,7 +27,7 @@ Standard usage:
 	$("a").on("mannyTap", function(e){
 		// click event logic
 	});
-    
+
 Delegate event functionality to a child element:
 
 	$("nav").on("mannyTap", "a", function(e){
